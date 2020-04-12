@@ -231,8 +231,6 @@ input[type=number]:focus,
     margin-right: auto;
     margin-top: 3px;
 }
-    .output-cards{
-        background-image: unset !important;
-    }
+   
 
 }
