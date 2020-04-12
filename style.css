@@ -212,7 +212,7 @@ input[type=number]:focus,
 
 .single-output-card-container {
     margin: 5% 5% !important;
-    padding: 5% 5% !important;
+    padding:5% 25% 5%  5% !important;
 }
 
 .card-value h3 {
@@ -221,6 +221,7 @@ input[type=number]:focus,
 }
 
 .mobile-card {
+    overflow:hidden;
     margin: 5% 5% !important;
 }
 
