@@ -1,0 +1,237 @@
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;       /* Remove default arrow */
+    background-color: rgb(255, 255, 255) !important;
+
+
+}
+.container{
+    margin-top: unset !important;
+    border: unset !important;
+}
+.headingMain{
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #333333;
+    border: unset !important;
+    border-bottom: unset!important;
+    margin: unset !important;
+    background: rgb(29,131,127);
+    background: linear-gradient(180deg, rgb(47, 47, 47) 0%, rgb(23, 162, 184) 40%, rgba(255,255,255,1) 99%);
+}
+.countrySearch{
+    box-shadow: 10px 6px 16px rgba(31,31,31,0.33);
+    z-index: 999;
+    margin-bottom: -115px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: auto;
+}
+.cards-out {
+    padding: 40px 0px 50px 0px;
+    z-index: 0;
+}
+select:focus {
+    transition: 0.3s;
+    background-color: rgba(9, 244, 229, 0.34);
+    outline: unset !important;
+    border: 0px !important;
+    box-shadow: 0 0 3pt 2pt #719ECE;
+}
+.output-cards {
+    transition: 0.3s;
+    border-radius: 20px;
+    padding: 40px 0px 40px 0px;
+    margin-bottom: 30px;
+    background-image: url('https://api.time.com/wp-content/uploads/2020/03/covid-map-march-11.png?w=1200&h=626&crop=1');
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.5);
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #EFEFEF;
+    background: #707070;
+}
+
+::selection {
+    color: #EFEFEF;
+    background: #707070;
+}
+
+/* browser default styling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* customized scrollbar for chrome desktop version only */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(248, 248, 248, 0.88);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(11, 95, 221, 0.44);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #0b5fdd 1%, #3690f0 60%, #54a3ee 79%, rgba(76, 163, 239, 0.59) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #0b5fdd 1%, #3690f0 60%, #54a3ee 79%, #4ca3ef 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #0b5fdd 1%, #3690f0 60%, #54a3ee 79%, #4ca3ef 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b5fdd', endColorstr='#4ca3ef', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb {
+    background: #cbcbcb;
+}
+
+
+/*Unsetting some default styles*/
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+    border: none;
+    outline: 2px solid #707070;
+
+}
+.SQC-Simulation-output-container .page-item.active .page-link {
+    background-color: #707070 !important;
+}
+
+.single-output-card-container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background: #FCFCFC;
+    /*border: 1px solid #cac8c8;*/
+    box-sizing: border-box;
+    box-shadow: 10px 6px 16px rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+    padding: 1% 1%;
+}
+.single-output-card {
+    min-height: 87px;
+    max-height: 87px;
+    padding-left: 2px;
+
+}
+
+
+.output-card-title h4 span {
+
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-indent: 3px;
+    color: #ffffff;
+}
+
+.output-card-title h4 {
+    margin: unset;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 5px;
+    /*font-size: 18px;*/
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.card-value h3 span{
+
+    transition: 0.4s;
+    display: inline;
+    font-style: normal;
+    font-weight: bold;
+    margin: unset;
+    font-size: 25px;
+    line-height: 87px;
+    text-indent: 3px;
+    color: #ffffff;
+}
+
+.card-value:before {
+    content: " ";
+    height: 75%;
+    position: absolute;
+    transform: translate(-20px, 10px);
+    width: 3px;
+    background-color: rgba(255, 255, 255, 0.49);
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+
+.output-card-title {
+    width: 65% !important;
+}
+
+.card-value {
+    width: 30% !important;
+}
+
+.output-card-title h4 {
+    /*font-size: 18px !important;*/
+}
+
+.output-card-title h4 span {
+    /*font-size: 11px !important;*/
+}
+
+.single-output-card-container {
+    margin: 5% 5% !important;
+    padding: 5% 5% !important;
+}
+
+.card-value h3 {
+    font-size: 25px !important;
+    padding: unset;
+}
+
+.mobile-card {
+    margin: 5% 5% !important;
+}
+
+.digitField{
+
+    margin-left: 33%;
+    margin-right: auto;
+    margin-top: 3px;
+}
+    .output-cards{
+        background-image: unset !important;
+    }
+
+}
