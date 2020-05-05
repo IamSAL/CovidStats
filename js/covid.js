@@ -77,7 +77,7 @@ window.onload=function () {
     HistoricalDataAll();
 
     let xhr=new XMLHttpRequest();
-    xhr.open('GET','https://corona.lmao.ninja/all');
+    xhr.open('GET','https://corona.lmao.ninja/v2/all');
     xhr.onload=function () {
         if (this.status===200){
              allData=JSON.parse(this.responseText);
